@@ -24,17 +24,17 @@ function ImageSlider() {
     return React.createElement(
         "div",
         { className: "image_slider" },
-        React.createElement(ArrowIcon, { arrow_src: "images/back.png", arrow_alt: "back" }),
-        React.createElement(
-            "div",
-            { className: "images_div" },
-            React.createElement(Image, { srcParam: "images/cats.jpg", altParam: "cats" }),
-            React.createElement(Image, { srcParam: "images/waterfall.jpg", altParam: "waterfall" }),
-            React.createElement(Image, { srcParam: "images/brasil.jpg", altParam: "brasil" }),
-            React.createElement(Image, { srcParam: "images/code.jpg", altParam: "code" }),
-            React.createElement(Image, { srcParam: "images/cycle.jpg", altParam: "cycle" })
-        ),
-        React.createElement(ArrowIcon, { arrow_src: "images/forward.png", arrow_alt: "forward" })
+        React.createElement(Image, { srcParam: "images/cats.jpg", altParam: "cats" }),
+        React.createElement(Image, { srcParam: "images/waterfall.jpg", altParam: "waterfall" }),
+        React.createElement(Image, { srcParam: "images/brasil.jpg", altParam: "brasil" }),
+        React.createElement(Image, { srcParam: "images/code.jpg", altParam: "code" }),
+        React.createElement(Image, { srcParam: "images/cycle.jpg", altParam: "cycle" }),
+        React.createElement(Image, { srcParam: "images/waterfall.jpg", altParam: "waterfall" }),
+        React.createElement(Image, { srcParam: "images/brasil.jpg", altParam: "brasil" }),
+        React.createElement(Image, { srcParam: "images/code.jpg", altParam: "code" }),
+        React.createElement(Image, { srcParam: "images/cycle.jpg", altParam: "cycle" }),
+        React.createElement(Image, { srcParam: "images/cats.jpg", altParam: "cats" }),
+        React.createElement(Image, { srcParam: "images/waterfall.jpg", altParam: "waterfall" })
     );
 }
 
@@ -47,7 +47,13 @@ export default function App() {
             null,
             "Image Slider"
         ),
-        React.createElement(ImageSlider, null)
+        React.createElement(
+            "div",
+            { className: "app_flex" },
+            React.createElement(ArrowIcon, { arrow_src: "images/back.png", arrow_alt: "back" }),
+            React.createElement(ImageSlider, null),
+            React.createElement(ArrowIcon, { arrow_src: "images/forward.png", arrow_alt: "forward" })
+        )
     );
 }
 

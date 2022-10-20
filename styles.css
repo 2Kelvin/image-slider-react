@@ -9,27 +9,35 @@ body {
     background-color: #efefef;
 }
 
-.image_slider {
+.app>h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.app_flex {
     display: flex;
     align-items: center;
 }
 
-.images_div {
+.image_slider {
+    max-width: 75vw;
     display: flex;
-}
-
-.app>h1 {
-    text-align: center;
-    margin-bottom: 1em;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 3em 2em;
+    border-radius: 15px;
 }
 
 .my_image {
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 150px;
+    max-width: 150px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 5px 10px;
     object-fit: cover;
-    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .icon {
