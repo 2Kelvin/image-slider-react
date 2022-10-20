@@ -8,18 +8,29 @@ body {
     height: 100vh;
 }
 
-.image_slider>h1 {
+.image_slider {
+    display: flex;
+    align-items: center;
+}
+
+.images_div {
+    display: flex;
+}
+
+.app>h1 {
     text-align: center;
 }
 
 .my_image {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 15px;
     margin: 5px;
 }
 
 .icon {
     margin: 5px;
-    align-self: center;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
 }

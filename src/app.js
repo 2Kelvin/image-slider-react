@@ -31,13 +31,14 @@ function IconBack() {
 function ImageSlider() {
     return (
         <div className="image_slider">
-            <h1>Image Slider</h1>
             <IconBack />
-            <Image srcParam="images/cats.jpg" altParam="cats" />
-            <Image srcParam="images/waterfall.jpg" altParam="waterfall" />
-            <Image srcParam="images/brasil.jpg" altParam="brasil" />
-            <Image srcParam="images/code.jpg" altParam="code" />
-            <Image srcParam="images/cycle.jpg" altParam="cycle" />
+            <div className="images_div">
+                <Image srcParam="images/cats.jpg" altParam="cats" />
+                <Image srcParam="images/waterfall.jpg" altParam="waterfall" />
+                <Image srcParam="images/brasil.jpg" altParam="brasil" />
+                <Image srcParam="images/code.jpg" altParam="code" />
+                <Image srcParam="images/cycle.jpg" altParam="cycle" />
+            </div>
             <IconForward />
         </div>
     );
@@ -46,6 +47,7 @@ function ImageSlider() {
 export default function App() {
     return (
         <div className="app">
+            <h1>Image Slider</h1>
             <ImageSlider />
         </div>
     );
