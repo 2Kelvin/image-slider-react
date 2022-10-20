@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.image_slider>h1 {
+    text-align: center;
+}
+
+.my_image {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.icon {
+    margin: 5px;
+    align-self: center;
+}
