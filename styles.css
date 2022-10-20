@@ -6,6 +6,7 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
+    background-color: #efefef;
 }
 
 .image_slider {
@@ -27,6 +28,8 @@ body {
     width: 150px;
     border-radius: 15px;
     margin: 5px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .icon {
