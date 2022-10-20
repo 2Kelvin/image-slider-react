@@ -8,21 +8,11 @@ function Image({ srcParam, altParam }) {
     );
 }
 
-function IconForward() {
+function ArrowIcon({ arrow_src, arrow_alt }) {
     return (
         <img
-            src="images/forward.png"
-            alt="forward"
-            className="icon"
-        />
-    );
-}
-
-function IconBack() {
-    return (
-        <img
-            src="images/back.png"
-            alt="back"
+            src={arrow_src}
+            alt={arrow_alt}
             className="icon"
         />
     );
@@ -31,7 +21,7 @@ function IconBack() {
 function ImageSlider() {
     return (
         <div className="image_slider">
-            <IconBack />
+            <ArrowIcon arrow_src="images/back.png" arrow_alt="back" />
             <div className="images_div">
                 <Image srcParam="images/cats.jpg" altParam="cats" />
                 <Image srcParam="images/waterfall.jpg" altParam="waterfall" />
@@ -39,17 +29,17 @@ function ImageSlider() {
                 <Image srcParam="images/code.jpg" altParam="code" />
                 <Image srcParam="images/cycle.jpg" altParam="cycle" />
             </div>
-            <IconForward />
+            <ArrowIcon arrow_src="images/forward.png" arrow_alt="forward" />
         </div>
     );
 }
 
 export default function App() {
     return (
-        <div className="app">
+        <section className="app">
             <h1>Image Slider</h1>
             <ImageSlider />
-        </div>
+        </section>
     );
 }
 

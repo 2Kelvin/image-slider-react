@@ -9,18 +9,13 @@ function Image(_ref) {
     });
 }
 
-function IconForward() {
-    return React.createElement("img", {
-        src: "images/forward.png",
-        alt: "forward",
-        className: "icon"
-    });
-}
+function ArrowIcon(_ref2) {
+    var arrow_src = _ref2.arrow_src,
+        arrow_alt = _ref2.arrow_alt;
 
-function IconBack() {
     return React.createElement("img", {
-        src: "images/back.png",
-        alt: "back",
+        src: arrow_src,
+        alt: arrow_alt,
         className: "icon"
     });
 }
@@ -29,7 +24,7 @@ function ImageSlider() {
     return React.createElement(
         "div",
         { className: "image_slider" },
-        React.createElement(IconBack, null),
+        React.createElement(ArrowIcon, { arrow_src: "images/back.png", arrow_alt: "back" }),
         React.createElement(
             "div",
             { className: "images_div" },
@@ -39,13 +34,13 @@ function ImageSlider() {
             React.createElement(Image, { srcParam: "images/code.jpg", altParam: "code" }),
             React.createElement(Image, { srcParam: "images/cycle.jpg", altParam: "cycle" })
         ),
-        React.createElement(IconForward, null)
+        React.createElement(ArrowIcon, { arrow_src: "images/forward.png", arrow_alt: "forward" })
     );
 }
 
 export default function App() {
     return React.createElement(
-        "div",
+        "section",
         { className: "app" },
         React.createElement(
             "h1",
